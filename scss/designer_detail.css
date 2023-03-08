@@ -116,8 +116,7 @@ a {
   font-family: "Montserrat";
   font-weight: 400;
   font-size: 2vh;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
   margin-left: 10px;
 }
 .profile .inner .profile_cont .profile_txt .name, .profile .inner .profile_cont .profile_txt .name_en, .profile .inner .profile_cont .profile_txt .email {
@@ -266,10 +265,11 @@ a {
   .concept .inner .title {
     font-size: 40px;
     margin-top: 0px;
+    height: 100px;
   }
   .concept .inner .desc {
     font-size: 14px;
-    margin-top: 65px;
+    margin-top: 180px;
   }
 }
 
@@ -499,19 +499,7 @@ a {
   z-index: 9;
 }
 .inter .inner .top .img:hover img {
-  -webkit-animation: scoll 5s infinite ease-in-out;
-          animation: scoll 5s infinite ease-in-out;
-}
-@-webkit-keyframes scoll {
-  0% {
-    object-position: 20%;
-  }
-  50% {
-    object-position: 80%;
-  }
-  100% {
-    object-position: 20%;
-  }
+  animation: scoll 5s infinite ease-in-out;
 }
 @keyframes scoll {
   0% {
@@ -551,7 +539,6 @@ a {
   }
   .inter .inner .top {
     flex-direction: column;
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     gap: 20px;
@@ -631,7 +618,6 @@ a {
   }
   .inter .inner .examples .example img {
     width: 100%;
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
   }
@@ -646,7 +632,6 @@ a {
   }
   .inter .inner .top {
     flex-direction: column;
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     gap: 20px;

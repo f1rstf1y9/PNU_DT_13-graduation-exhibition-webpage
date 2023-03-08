@@ -11,13 +11,14 @@ $('#menu-close').click(function(){
 /* modal on off */
 body =  document.querySelector('body');
 $('.inter .btn-modal__open').click(function(){
-  console.log('d')
   $('.modal-cont').fadeIn();
   body.style.overflow = 'hidden';
 })
 $('.modal-cont.designer-inter').click(function(){
+  console.log('d')
   $('.modal-cont').fadeOut();
   body.style.overflow = 'auto';
+  $('iframe')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
 })
 
 /* kakao map api */
